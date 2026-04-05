@@ -2,7 +2,7 @@
   "name": "suniatice",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RanitAgarwala-00.github.io/WebD_ReactDemo.git",
+  "homepage": "https://ranitagarwala-00.github.io/WebDevProject",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
