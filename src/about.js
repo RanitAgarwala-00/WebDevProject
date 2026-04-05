@@ -1,3 +1,4 @@
+import WelcomeMessage from "./WelcomeMessage";
 import { useState } from "react";
 
 const values = [
@@ -40,6 +41,8 @@ function About() {
   
 
   return (
+    <>
+      <WelcomeMessage />
     <div style={styles.page}>
       <h2 style={{ color: "#9a2020" }}>About Us</h2>
       <p style={{ color: "#777" }}>A legacy of quality rice milling from West Bengal.</p>
@@ -75,6 +78,7 @@ function About() {
         ))}
       </div>
     </div>
-  );
+      </>
+);
 }
 export default About;
