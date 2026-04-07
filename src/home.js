@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 const styles = {
   hero: {
     position: "relative",
@@ -43,20 +45,29 @@ const styles = {
   },
 };
 
-function Home() {
-  return (
-    <div>
-      <div style={styles.hero}>
-        <div style={styles.overlay}></div>
-        <div style={styles.content}>
-          <p style={styles.sub}>🌾 From the fields of West Bengal</p>
-          <h1 style={styles.title}>Sunita Agro Rice Mills</h1>
-          <p style={styles.sub}>Premium quality rice — trusted by households across India.</p>
-          <p style={styles.bengali}>সুনীতা চাল: বাড়ে বেশি, তাই লাগে কম।</p>
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      welcomeMessage: "From the fields of West Bengal"
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <div style={styles.hero}>
+          <div style={styles.overlay}></div>
+          <div style={styles.content}>
+            <p style={styles.sub}>🌾 {this.state.welcomeMessage}</p>
+            <h1 style={styles.title}>Sunita Agro Rice Mills</h1>
+            <p style={styles.sub}>Premium quality rice — trusted by households across India.</p>
+            <p style={styles.bengali}>সুনীতা চাল: বাড়ে বেশি, তাই লাগে কম।</p>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Home;

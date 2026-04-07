@@ -68,7 +68,6 @@ function About() {
       <div>
         {timeline.map((item) => (
           <div key={item.year} >
-            <div style={styles.dot}></div>
             <p style={{ fontWeight: "bold", color: "#9a2020", marginBottom: "2px" }}>{item.year}</p>
             <p style={{ fontSize: "0.88rem", color: "#555" }}>{item.text}</p>
           </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 function ProductCard(props) {
   const validTypes = ["Parboiled", "Raw", "Steam"];
@@ -42,12 +41,7 @@ function ProductCard(props) {
   );
 }
 
-ProductCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  desc: PropTypes.string
-};
-
+// Native Component API feature (no import needed)
 ProductCard.defaultProps = {
   desc: "Premium quality rice processed under strict hygiene standards."
 };

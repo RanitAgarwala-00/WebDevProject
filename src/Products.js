@@ -56,6 +56,12 @@ const products = [
     type: "Steam",
     desc: "Clean white finish. Ideal for hotels and restaurants.",
   },
+  {
+    id: 99,
+    name: "Inalid Prop Example",
+    type: "Roasted", 
+    desc: "This is a test case to demonstrate Prop Validation."
+  }
 ];
 
 const styles = {
@@ -65,7 +71,6 @@ const styles = {
     padding: "40px 20px",
     fontFamily: "sans-serif",
   },
-
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
