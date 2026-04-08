@@ -41,7 +41,6 @@ function ProductCard(props) {
   );
 }
 
-// Native Component API feature (no import needed)
 ProductCard.defaultProps = {
   desc: "Premium quality rice processed under strict hygiene standards."
 };
