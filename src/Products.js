@@ -1,6 +1,5 @@
-import React from "react";
-import ProductCard from "./ProductCard";
 
+import React from "react";
 const products = [
   {
     id: 1,
@@ -58,10 +57,10 @@ const products = [
   },
   {
     id: 99,
-    name: "Inalid Prop Example",
-    type: "Roasted", 
-    desc: "This is a test case to demonstrate Prop Validation."
-  }
+    name:38492,
+    type: 756756,
+    desc: "Clean white finish. Ideal for hotels and restaurants.",
+  },
 ];
 
 const styles = {
@@ -71,13 +70,40 @@ const styles = {
     padding: "40px 20px",
     fontFamily: "sans-serif",
   },
+
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
     gap: "16px",
   },
-};
 
+  card: {
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    padding: "16px",
+    backgroundColor: "#fff",
+    boxShadow: "0 2px 6px #e8080814",
+  },
+
+  tag: {
+    fontSize: "0.75rem",
+    color: "#888",
+    marginBottom: "6px",
+    textTransform: "uppercase",
+  },
+
+  name: {
+    fontSize: "1rem",
+    color: "#9a2020",
+    marginBottom: "6px",
+  },
+
+  desc: {
+    fontSize: "0.85rem",
+    color: "#555",
+    lineHeight: 1.5,
+  },
+};
 function Products() {
   return (
     <div style={styles.page}>
@@ -88,16 +114,14 @@ function Products() {
 
       <div style={styles.grid}>
         {products.map((p) => (
-          <ProductCard 
-            key={p.id} 
-            name={p.name} 
-            type={p.type} 
-            desc={p.desc} 
-          />
+          <div key={p.id} style={styles.card}>
+            <p style={styles.tag}>{p.type}</p>
+            <h3 style={styles.name}>{p.name}</h3>
+            <p style={styles.desc}>{p.desc}</p>
+          </div>
         ))}
       </div>
     </div>
   );
 }
-
 export default Products;
